@@ -10,24 +10,24 @@ export default function Blogs({ getHeader }) {
           {blogsData?.map((item, index) => (
             <div key={item?.id + index} className="col-sm-6 col-lg-4 mb-4">
               <div className="blog-entry">
-                <a href="#">
+                <a href="#test">
                   <img
                     src={require(`../../images/${item?.img}`)}
-                    alt="Image placeholder"
+                    alt="placeholder"
                     className="img-fluid"
                   />
                 </a>
                 <div className="blog-entry-text">
                   <h3>
-                    <a href="#">{item?.title}</a>
+                    <a href="#test">{item?.title}</a>
                   </h3>
                   <p className="mb-4">{item?.description}</p>
 
                   <div className="meta">
-                    <a href="#">
+                    <a href="#test">
                       <span className="icon-calendar"></span> {item?.date}
                     </a>
-                    <a href="#">
+                    <a href="#test">
                       <span className="icon-bubble"></span> {item?.comments}{" "}
                       Comments
                     </a>

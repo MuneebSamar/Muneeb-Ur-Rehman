@@ -21,14 +21,14 @@ export default function Testimonial() {
                 <div className="block-47-image">
                   <img
                     src={require(`../../images/${item?.img}`)}
-                    alt="Image placeholder"
+                    alt="placeholder"
                     className="img-fluid"
                   />
                 </div>
                 <blockquote className="block-47-quote">
                   <p>&ldquo;{item?.description}&rdquo;</p>
                   <cite className="block-47-quote-author">
-                    &mdash; {item?.name} <a href="#">{item?.designation}</a>
+                    &mdash; {item?.name} <a href="#test">{item?.designation}</a>
                   </cite>
                 </blockquote>
               </div>
