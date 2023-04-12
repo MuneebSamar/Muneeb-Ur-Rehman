@@ -1,16 +1,10 @@
 import React from "react";
 import { featuredPortfolio } from "../json";
+import { cloneDeep } from "lodash";
+
 export default function Featured({ getHeader }) {
-    const [portfolio, setPortfolio] = React.useState(featuredPortfolio);
-    const categories = ['All', ...new Set(featuredPortfolio.map((item) => item.tag))];
-    const filter = (category) => {
-        if (category === 'All') {
-            setPortfolio(featuredPortfolio);
-            return;
-        }
-        const filteredData = featuredPortfolio.filter((item) => item.tag === category);
-        setPortfolio(filteredData);
-    }
+    const portfolio = cloneDeep(featuredPortfolio);
+    const categories = ['all', ...new Set(featuredPortfolio.map((item) => item.tag))];
 
   return (
     <section className="site-section" id="section-portfolio">
@@ -19,12 +13,12 @@ export default function Featured({ getHeader }) {
         <div className="filters">
             <ul>
                 {categories.map((tag, index) => (
-                    <li key={index} onClick={() => filter(tag)}>{tag}</li>
+                    <li data-filter={tag === 'all' ? "*" : '.'+tag} className={`${tag === 'all' && 'active'}`} key={index}>{tag}</li>
                 ))}
             </ul>
         </div>
         <div className="filters-content">
-          <div className="grid col-span-12">
+          <div className="row grid">
             {portfolio.map((item, index) => (
               <div
                 className={`single-portfolio col-sm-4 all ${item?.tag}`}
@@ -39,6 +33,11 @@ export default function Featured({ getHeader }) {
                       alt=""
                     />
                   </div>
+                  <a href="images/p1.jpg" className="img-pop-up">  
+								<div className="middle">
+									<div className="text align-self-center d-flex"><img src="images/preview.png" alt="" /></div>
+								</div>
+							</a>     
                 </div>
                 <div className="p-inner">
                   <h4>{item?.title}</h4>
