@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@locator/runtime": "^0.2.4",
     "tailwindcss": "^3.3.1"
   }
 }
