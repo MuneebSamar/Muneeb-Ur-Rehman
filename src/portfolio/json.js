@@ -97,3 +97,97 @@ export const resumeData = {
         },
     ],
 }
+
+export const aboutData = {
+    short_description: "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.",
+    img: "image_1.jpg",
+    cv: "cv.pdf",
+}
+
+export const testimonial = [
+    {
+        id: 1,
+        img: "person_1.jpg",
+        name: "Ethan McCown",
+        designation: "CEO, XYZ Inc.",
+        description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    },{
+        id: 2,
+        img: "person_2.jpg",
+        name: "Ethan McCown",
+        designation: "CEO, XYZ Inc.",
+        description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    },{
+        id: 3,
+        img: "person_3.jpg",
+        name: "Ethan McCown",
+        designation: "CEO, XYZ Inc.",
+        description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    },{
+        id: 4,
+        img: "person_4.jpg",
+        name: "Ethan McCown",
+        designation: "CEO, XYZ Inc.",
+        description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    }
+]
+
+export const services = [
+    {
+        id: 1,
+        icon: "icon-browser2",
+        title: "Web Design",
+        description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    },{
+        id: 2,
+        icon: "icon-presentation",
+        title: "Search Engine Optimization",
+        description: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+    },{
+        id: 3,
+        icon: "icon-video2",
+        title: "Video Editing",
+        description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.",
+    }
+]
+
+export const blogs = [
+    {
+        id: 1,
+        img: "post_1.jpg",
+        title: "Creative Product Designer From Facebook",
+        description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.",
+        date: "March 15, 2018",
+        comments: "3",
+    },{
+        id: 2,
+        img: "post_2.jpg",
+        title: "Creative Product Designer From Facebook",
+        description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.",
+        date: "March 15, 2018",
+        comments: "3",
+    },{
+        id: 3,
+        img: "post_3.jpg",
+        title: "Creative Product Designer From Facebook",
+        description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.",
+        date: "March 15, 2018",
+        comments: "3",
+    }
+]
+
+export const contacts = {
+    contact : {
+        email: "muneebsamar13@gmial.com",
+        phone: "+92 340 4671591",
+        linkedin: "https://www.linkedin.com/in/muneeb-ur-rehman-b7a582240/",
+        address: "198 West 21th Street, \n Suite 721 New York NY 10016",
+    },
+    social: {
+        facebook: "https://www.facebook.com/profile.php?id=100034567837311",
+        twitter: "https://twitter.com/",
+        instagram: "https://www.instagram.com/",
+        linkedin: "https://www.linkedin.com/in/muneeb-ur-rehman-b7a582240/",
+    }
+}
