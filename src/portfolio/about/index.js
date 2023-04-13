@@ -4,7 +4,7 @@ import { cloneDeep } from "lodash";
 
 export default function About() {
     const about = cloneDeep(aboutData);
-    const { short_description, description, img, cv} = about;
+    const { short_description, description, img} = about;
     return (
         <section className="site-section" id="section-about">
         <div className="container">
@@ -12,7 +12,7 @@ export default function About() {
             <div className="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
               <img
                 src={require(`../../images/${img}`)}
-                alt="Image placeholder"
+                alt="placeholder"
                 className="img-fluid"
               />
             </div>
@@ -36,7 +36,7 @@ export default function About() {
                 >
                   Hire Me
                 </a>
-                <a href="#" className="btn btn-secondary px-4 py-2 btn-sm">
+                <a href="#test" className="btn btn-secondary px-4 py-2 btn-sm">
                   Download CV
                 </a>
               </p>
