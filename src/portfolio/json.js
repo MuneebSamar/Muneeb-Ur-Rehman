@@ -181,7 +181,6 @@ export const contacts = {
     contact : {
         email: "muneebsamar13@gmial.com",
         phone: "+92 340 4671591",
-        linkedin: "https://www.linkedin.com/in/muneeb-ur-rehman-b7a582240/",
         address: "198 West 21th Street, \n Suite 721 New York NY 10016",
     },
     social: {
