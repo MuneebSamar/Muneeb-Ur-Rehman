@@ -47,7 +47,7 @@ export default function Home() {
             <div className="col-md-10 text-center pt-5">
               <h1 className="site-heading site-animate">
                 Hello, I'm{" "}
-                <strong className="d-block">Muneeb Ur Rehman</strong>
+                <strong className="d-block">Muneeb Ur Rehman And Faizan Aslam</strong>
               </h1>
               <strong className="d-block text-white text-uppercase letter-spacing">
                 and this is My Rezume
