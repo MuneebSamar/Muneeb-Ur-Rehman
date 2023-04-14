@@ -19,7 +19,7 @@ export default function Portfolio() {
         );
     }
   return (
-    <>
+    <div data-spy="scroll" data-target="#pb-navbar" data-offset="200">
       <Home />
       <Featured getHeader={getHeader} />
       <Resume getHeader={getHeader} />
@@ -28,6 +28,6 @@ export default function Portfolio() {
       <Services getHeader={getHeader} />
       <Blogs getHeader={getHeader} />
       <Contact getHeader={getHeader} />
-    </>
+    </div>
   );
 }
