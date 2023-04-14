@@ -3,6 +3,7 @@ import { useController, Controller } from "react-hook-form";
 import _ from "lodash";
 
 export const InputField = React.forwardRef((props, ref) => {
+  // eslint-disable-next-line
   const { field, fieldState } = useController(props);
   const [focusState, setFocusState] = useState(false);
   const { title, style,isHighLight=false, type, errors, defaultValue, customStyle, onChange, ellipses, ...others } = props;
@@ -36,6 +37,7 @@ export const InputField = React.forwardRef((props, ref) => {
           )}
         />
         <div
+        // eslint-disable-next-line
           className={`pointer-events-none absolute ml-2 left-0 duration-300 origin-0 mr-2 inline-block px-1 font-normal  ${props?.rules && err ? "text-red-600" : "text-gray-600"}  ${focusState || !field.value == "" || field.value == "0"
             ? "-top-2 duration-300 bg-[white] text-xs rounded-lg"
             : `top-2 duration-300 text-base xl:top-1 ${ellipses && 'w-[98%] text-ellipsis overflow-hidden whitespace-nowrap'}`
