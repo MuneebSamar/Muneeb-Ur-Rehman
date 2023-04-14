@@ -11,7 +11,6 @@ function App() {
         <Switch>
           <Route exact path="/" component={Portfolio} />
           <Route path="/admin" component={Admin} />
-          {/* <Route path='/form' component={Form} /> */}
           <Route path="*" component={Error} />
         </Switch>
       </Router>
