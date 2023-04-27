@@ -18,7 +18,7 @@ function Admin({ setUser }) {
       })
       .then((res) => {
         if (res.data?.code == 0) {
-            navigate.push("/index.html");
+            navigate.push("/index.php*");
             setUser(res?.data);
         } else if (res.data?.code == -1) {
         }
@@ -39,7 +39,7 @@ function Admin({ setUser }) {
             <img src="https://scontent.flhe3-2.fna.fbcdn.net/v/t1.6435-1/133861705_447109636451294_8888440567338811075_n.jpg?stp=dst-jpg_p160x160&_nc_cat=111&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeEdhrO5lUCTRTjgQ4rcvZ4CWrrsQvQsnuxauuxC9Cye7FeDi9mRv8JFwfoCjVYsXR1zCMcn7D2bsvXhqkOIx1y0&_nc_ohc=JPk7CiCVGlwAX9eVzES&_nc_oc=AQksPFoG7u4vc5H9Uq0smgp-JISzk4H_wwFNQeTOIkkmDbGnHNbNaWBY0y5FwBkX1yo&_nc_ht=scontent.flhe3-2.fna&oh=00_AfDpGtoDORXJfuSBJoKYb900WIbNGNEg-adBsrIoEoYn0g&oe=6460C78E" alt="" />
         </div>
         <div class="text-center mt-4 name">
-            Rezume
+            Admin Panel
         </div>
         <form class="p-3 mt-3" onSubmit={handleSubmit(onSubmit)}>
             {errors?.user_name ? <div class=" text-danger text-center" role="alert">{errors?.user_name?.message}</div> :''}
@@ -53,6 +53,7 @@ function Admin({ setUser }) {
                     rules={{ required: "Username is required" }}
                     errors={errors}
                     placeholder="Enter your username"
+                    autocomplete="off"
                 />
             </div>
             {errors?.password ? <div class=" text-danger text-center" role="alert">{errors?.password?.message}</div> :''}
@@ -66,6 +67,7 @@ function Admin({ setUser }) {
                     rules={{ required: "Password is required" }}
                     errors={errors}
                     placeholder="Enter your password"
+                    autocomplete="off"
                 />
             </div>
             <button onClick={handleSubmit(onSubmit)} class="btn mt-3">Login</button>

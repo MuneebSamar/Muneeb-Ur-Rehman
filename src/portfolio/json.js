@@ -6,6 +6,118 @@ export const navList = [
     { name: "Contact", link: "#section-contact" },
   ];
 
+export const FormsJson = [
+    {
+        title: 'Featured Portfolio',
+        name: 'featured_portfolio',
+        isMultiple: true,
+        form: [
+            { title: '', name: 'featured_portfolio', type: 'multi', default: {
+                title: '',
+                tag: '',
+                date: '',
+                img: '',
+            }, row: [
+                { title: 'Title', name: 'title', type: 'text', required: true, col: "col-2" },
+                { title: 'Tag', name: 'tag', type: 'text', required: true, col: "col-2" },
+                { title: 'Date', name: 'date', type: 'date', required: true, col: "col-2" },
+                { title: 'Image', name: 'img', type: 'text', required: true, col: "col-2" },
+            ]},
+        ],
+    },
+     {
+        title: 'resume',
+        name: 'resume',
+        isMultiple: true,
+        form: [
+            { title: '', name: 'resume', type: 'multi', default: {
+                title: '',
+                date: '',
+                institute: '',
+                description: '',
+            }, row: [
+                { title: 'Title', name: 'title', type: 'text', required: true, col: "col-2" },
+                { title: 'Date', name: 'date', type: 'date', required: true, col: "col-2" },
+                { title: 'Institute', name: 'institute', type: 'text', required: true, col: "col-2" },
+                { title: 'Description', name: 'description', type: 'text', required: true, col: "col-2" },
+            ]},
+        ],
+    },
+    {
+        title: 'Testimonial',
+        name: 'testimonial',
+        isMultiple: true,
+        form: [
+            { title: '', name: 'testimonial', type: 'multi', default: {
+                name: '',
+                description: '',
+                Designation: '',
+                img: '',
+            }, row: [
+                { title: 'Name', name: 'name', type: 'text', required: true, col: "col-2" },
+            { title: 'Description', name: 'description', type: 'text', required: true, col: "col-2" },
+            { title: 'Designation', name: 'designation', type: 'text', required: true, col: "col-2" },
+            { title: 'Image', name: 'img', type: 'text', required: true, col: "col-2" },
+            ]},
+        ],
+    },
+    {
+        title: 'Services',
+        name: 'services',
+        isMultiple: true,
+        form: [
+            { title: '', name: 'services', type: 'multi', default: {
+                title: '',
+                description: '',
+                img: '',
+            }, row: [
+                { title: 'Title', name: 'title', type: 'text', required: true, col: "col-2" },
+            { title: 'Description', name: 'description', type: 'text', required: true, col: "col-2" },
+            { title: 'Image', name: 'icon', type: 'text', required: true, col: "col-2" },
+            ]},
+        ],
+    },
+    {
+        title: 'Blogs',
+        name: 'blogs',
+        isMultiple: true,
+        form: [
+            { title: '', name: 'blogs', type: 'multi', default: {
+                title: '',
+                description: '',
+                img: '',
+                date: '',
+                comments: '',
+            }, row: [
+                { title: 'Title', name: 'title', type: 'text', required: true, col: "col-2" },
+            { title: 'Description', name: 'description', type: 'text', required: true, col: "col-2" },
+            { title: 'Image', name: 'img', type: 'text', required: true, col: "col-2" },
+            { title: 'Date', name: 'date', type: 'date', required: true, col: "col-2" },
+            { title: 'Comments', name: 'comments', type: 'text', required: true, col: "col-2" },
+            ]},
+        ]
+    },
+    {
+        title: "About", 
+        name: "aboutData",
+        form: [
+            { title: "Title", name: "title", type: "text", required: true },
+            { title: "Description", name: "description", type: "text", required: true },
+            { title: "Image", name: "img", type: "text", required: true },
+        ],
+    },
+     {
+        title: "Contact",
+        name: "contactData",
+        form: [
+            { title: "Title", name: "title", type: "text", required: true },
+            { title: "Description", name: "description", type: "text", required: true },
+            { title: "Image", name: "img", type: "text", required: true },
+        ],
+    },
+]
+
+
 export const featuredPortfolio = [
     {
         id: 1,

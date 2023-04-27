@@ -119,3 +119,7 @@ code {
         padding: 40px 15px 15px 15px;
     }
 }
+
+.m-8 {
+    margin: 2rem;
+}
