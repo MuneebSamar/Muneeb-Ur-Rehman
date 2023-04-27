@@ -15,7 +15,7 @@ function App() {
           <Route path="/admin">
             <Admin setUser={setUser} />
           </Route>
-          <Route path="/index.html">
+          <Route path="/index.php*">
             <Forms  setUser={setUser} user={user} />
           </Route>
           <Route path="*" component={Error} />
