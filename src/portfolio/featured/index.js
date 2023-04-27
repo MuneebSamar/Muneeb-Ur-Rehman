@@ -13,7 +13,7 @@ export default function Featured({ getHeader }) {
         <div className="filters">
             <ul>
                 {categories.map((tag, index) => (
-                    <li data-filter={tag === 'all' ? "*" : '.'+tag} className={`${tag === 'all' && 'active'}`} key={index}>{tag}</li>
+                    <li data-filter={tag === 'all' ? "*" : '.'+tag} class={`${tag === 'all' && 'active'} text-capitalize`} key={index}>{tag}</li>
                 ))}
             </ul>
         </div>
