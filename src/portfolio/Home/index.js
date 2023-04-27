@@ -27,7 +27,7 @@ export default function Home() {
             <ul className="navbar-nav">
               {navigation.map((nav, index) => (
                 <li className="nav-item" key={index}>
-                  <a className="nav-link" href="{nav.link}">
+                  <a className="nav-link" href={nav.link}>
                     {nav.name}
                   </a>
                 </li>
