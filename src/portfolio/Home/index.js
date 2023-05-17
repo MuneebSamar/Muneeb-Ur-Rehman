@@ -2,7 +2,7 @@ import React from "react";
 import backgroundImage from "../../images/image_1.jpg";
 import { navList } from "../../portfolio/json";
 import { cloneDeep } from "lodash";
-export default function Home({ userData }) {
+export default function Home() {
   const navigation = cloneDeep(navList);
   //Faizan Aslam First Commit
   return (
@@ -47,7 +47,7 @@ export default function Home({ userData }) {
             <div className="col-md-10 text-center pt-5">
               <h1 className="site-heading site-animate">
                 Hello, I'm{" "}
-                <strong className="d-block">{userData?.user_name}</strong>
+                <strong className="d-block">Muneeb Ur Rehman</strong>
               </h1>
               <strong className="d-block text-white text-uppercase letter-spacing">
                 and this is My Rezume

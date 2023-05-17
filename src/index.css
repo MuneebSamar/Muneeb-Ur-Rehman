@@ -123,19 +123,3 @@ code {
 .m-8 {
     margin: 2rem;
 }
-
-.loading-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .loading-icon {
-    font-size: 6rem;
-    color: #007BFF;
-    animation: spin 2s linear infinite;
-  }
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
