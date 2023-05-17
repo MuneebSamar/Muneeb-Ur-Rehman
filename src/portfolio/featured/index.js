@@ -1,28 +1,25 @@
 import React from "react";
-import { featuredPortfolio } from "../json";
-import { cloneDeep } from "lodash";
 
-export default function Featured({ getHeader }) {
-    const portfolio = cloneDeep(featuredPortfolio);
-    const categories = ['all', ...new Set(featuredPortfolio.map((item) => item.tag))];
-
+export default function Featured({ getHeader, userData }) {
+    const categories = ['all', ...new Set(userData?.featured_portfolio?.map((item) => item?.tag))];
+console.log(userData);
   return (
-    <section className="site-section" id="section-portfolio">
+    <section className="site-section" style={{height: "72rem"}} id="section-portfolio">
       <div className="container">
         {getHeader("Featured", "Portfolio")}
         <div className="filters">
             <ul>
-                {categories.map((tag, index) => (
+                {categories?.map((tag, index) => (
                     <li data-filter={tag === 'all' ? "*" : '.'+tag} class={`${tag === 'all' && 'active'} text-capitalize`} key={index}>{tag}</li>
                 ))}
             </ul>
         </div>
         <div className="filters-content">
           <div className="row grid">
-            {portfolio.map((item, index) => (
+            {userData?.featured_portfolio?.map((item, id) => (
               <div
                 className={`single-portfolio col-sm-4 all ${item?.tag}`}
-                key={index}
+                key={id}
               >
                 <div className="relative">
                   <div className="thumb">

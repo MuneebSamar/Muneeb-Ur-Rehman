@@ -6,7 +6,12 @@ import Testimonial from "./testimonial";
 import Services from "./services";
 import Blogs from "./blogs";
 import Contact from "./contact";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import LoadingPage from "../pages/loading";
 export default function Portfolio() {
+  const [userData, setUserData] = useState([]);
+  const [loading, setLoading] = useState(true);
     function getHeader(first, last) {
         return (
             <div className="row">
@@ -18,10 +23,24 @@ export default function Portfolio() {
           </div>
         );
     }
+    useEffect(() => {
+      axios.get("http://localhost/my_rezume/get_rezume.php?id=7").then((res) => {
+        if (res?.data?.code == 0) {
+        setUserData(res?.data?.data?.json_data);
+        // setLoading(false);
+        } 
+      });
+    }, []);
+    if (!userData) {
+      return <div>Loading...</div>;
+    }
+    if (loading === true) {
+      return <LoadingPage />;
+    }
   return (
     <div data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-      <Home />
-      <Featured getHeader={getHeader} />
+      <Home userData={userData} />
+      <Featured getHeader={getHeader} userData={userData} />
       <Resume getHeader={getHeader} />
       <About getHeader={getHeader} />
       <Testimonial getHeader={getHeader} />
