@@ -1,9 +1,9 @@
 import "./App.css";
 import React, {useEffect} from "react";
-import Portfolio from "./portfolio";
-import Admin from "./pages/admin";
-import Error from "./pages/errorPage";
-import Forms from "./pages/forms";
+import Portfolio from "./portfolio/index.js";
+import Admin from "./pages/admin.js";
+import Error from "./pages/errorPage.js";
+import Forms from "./pages/forms/index.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {

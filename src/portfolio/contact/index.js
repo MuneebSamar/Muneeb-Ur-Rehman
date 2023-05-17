@@ -1,4 +1,4 @@
-import { contacts } from "../json";
+import { contacts } from "../json.js";
 import { cloneDeep } from "lodash";
 export default function Contact() {
   const contactData = cloneDeep(contacts);
