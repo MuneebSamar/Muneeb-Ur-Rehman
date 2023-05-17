@@ -10,8 +10,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import LoadingPage from "../pages/loading";
 export default function Portfolio() {
-  const [userData, setUserData] = useState([]);
-  const [loading, setLoading] = useState(true);
     function getHeader(first, last) {
         return (
             <div className="row">
@@ -39,8 +37,8 @@ export default function Portfolio() {
     }
   return (
     <div data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-      <Home userData={userData} />
-      <Featured getHeader={getHeader} userData={userData} />
+      <Home />
+      <Featured getHeader={getHeader} />
       <Resume getHeader={getHeader} />
       <About getHeader={getHeader} />
       <Testimonial getHeader={getHeader} />
