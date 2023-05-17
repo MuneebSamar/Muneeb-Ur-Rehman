@@ -1,5 +1,5 @@
 import React from "react";
-import { aboutData } from "../json.js";
+import { aboutData } from "../json";
 import { cloneDeep } from "lodash";
 
 export default function About() {
