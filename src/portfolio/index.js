@@ -8,7 +8,7 @@ import Blogs from "./blogs";
 import Contact from "./contact";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import LoadingPage from "../pages/loading";
+import LoadingPage from "./../pages/loading"
 export default function Portfolio() {
   const [userData, setUserData] = useState([]);
   const [loading, setLoading] = useState(true);
