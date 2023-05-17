@@ -27,7 +27,7 @@ export default function Portfolio() {
       axios.get("http://localhost/my_rezume/get_rezume.php?id=7").then((res) => {
         if (res?.data?.code == 0) {
         setUserData(res?.data?.data?.json_data);
-        // setLoading(false);
+        setLoading(false);
         } 
       });
     }, []);
