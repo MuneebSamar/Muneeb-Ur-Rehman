@@ -1,4 +1,4 @@
-import { services } from "../json.js";
+import { services } from "../json";
 import { cloneDeep } from "lodash";
 export default function Services({ getHeader }) {
   const servicesData = cloneDeep(services);

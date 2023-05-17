@@ -1,5 +1,5 @@
 import React from "react";
-import { resumeData } from "../json.js";
+import { resumeData } from "../json";
 export default function Resume({ getHeader }) {
   let keys = Object?.keys(resumeData);
   return (
