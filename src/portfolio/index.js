@@ -1,14 +1,14 @@
-import Home from "./Home/index.js";
-import Featured from "./featured/index.js";
-import Resume from "./resume/index.js";
-import About from "./about/index.js";
-import Testimonial from "./testimonial/index.js";
-import Services from "./services/index.js";
-import Blogs from "./blogs/index.js";
-import Contact from "./contact/index.js";
+import Home from "./Home";
+import Featured from "./featured";
+import Resume from "./resume";
+import About from "./about";
+import Testimonial from "./testimonial";
+import Services from "./services";
+import Blogs from "./blogs";
+import Contact from "./contact";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import LoadingPage from "../pages/loading.js";
+import LoadingPage from "../pages/loading";
 export default function Portfolio() {
   const [userData, setUserData] = useState([]);
   const [loading, setLoading] = useState(true);

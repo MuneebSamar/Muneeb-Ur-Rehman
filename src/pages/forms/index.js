@@ -1,9 +1,9 @@
 import { useHistory } from "react-router-dom";
-import { FormsJson } from "../../portfolio/json.js";
+import { FormsJson } from "../../portfolio/json";
 import { cloneDeep } from "lodash";
-import { InputField } from "../../component/simpleInput.js";
-import { DatePickerFeild } from "../../component/datePicker.js";
-import { DoublicateFields } from "../../component/doublicate.js";
+import { InputField } from "../../component/simpleInput";
+import { DatePickerFeild } from "../../component/datePicker";
+import { DoublicateFields } from "../../component/doublicate";
 import { useForm, useFieldArray } from "react-hook-form";
 import React from "react";
 export default function Forms({ user, setUser }) {

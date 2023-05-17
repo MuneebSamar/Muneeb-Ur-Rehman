@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundImage from "../../images/image_1.jpg";
-import { navList } from "../../portfolio/json.js";
+import { navList } from "../../portfolio/json";
 import { cloneDeep } from "lodash";
 export default function Home({ userData }) {
   const navigation = cloneDeep(navList);
