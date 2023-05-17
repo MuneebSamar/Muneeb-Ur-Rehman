@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useForm, useFieldArray, useFormState } from 'react-hook-form';
-import { InputField } from './simpleInput';
-import { DatePickerFeild } from './datePicker';
+import { InputField } from './simpleInput.js';
+import { DatePickerFeild } from './datePicker.js';
 import { cloneDeep } from 'lodash';
 export function DoublicateFields({ form, doublicateValues, setDoublicateValues }) {
     const defaultsDeep = cloneDeep(form?.default);

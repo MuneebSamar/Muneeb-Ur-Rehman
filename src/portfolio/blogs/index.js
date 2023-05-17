@@ -1,4 +1,4 @@
-import { blogs } from "../json";
+import { blogs } from "../json.js";
 import { cloneDeep } from "lodash";
 export default function Blogs({ getHeader }) {
   const blogsData = cloneDeep(blogs);

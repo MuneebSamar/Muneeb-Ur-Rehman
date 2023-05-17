@@ -1,4 +1,4 @@
-import { testimonial } from "../json";
+import { testimonial } from "../json.js";
 import { cloneDeep } from "lodash";
 export default function Testimonial() {
   const testimonialData = cloneDeep(testimonial);

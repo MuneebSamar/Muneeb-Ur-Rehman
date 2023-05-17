@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 const url = "http://localhost/my_rezume/login.php";
 import axios from "axios";
-import { InputField } from "../component/simpleInput";
+import { InputField } from "../component/simpleInput.js";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
 function Admin({ setUser }) {
