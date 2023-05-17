@@ -6,6 +6,9 @@ import Testimonial from "./testimonial";
 import Services from "./services";
 import Blogs from "./blogs";
 import Contact from "./contact";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import LoadingPage from "../pages/loading";
 export default function Portfolio() {
     function getHeader(first, last) {
         return (
@@ -17,6 +20,20 @@ export default function Portfolio() {
             </div>
           </div>
         );
+    }
+    useEffect(() => {
+      axios.get("http://localhost/my_rezume/get_rezume.php?id=7").then((res) => {
+        if (res?.data?.code == 0) {
+        setUserData(res?.data?.data?.json_data);
+        setLoading(false);
+        } 
+      });
+    }, []);
+    if (!userData) {
+      return <div>Loading...</div>;
+    }
+    if (loading === true) {
+      return <LoadingPage />;
     }
   return (
     <div data-spy="scroll" data-target="#pb-navbar" data-offset="200">
