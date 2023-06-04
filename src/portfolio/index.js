@@ -1,3 +1,4 @@
+import React, { useState ) from "react";
 import Home from "./Home";
 import Featured from "./featured";
 import Resume from "./resume";
@@ -10,6 +11,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import LoadingPage from "../pages/loading";
 export default function Portfolio() {
+    const [userData, setUserData] = useState()
     function getHeader(first, last) {
         return (
             <div className="row">
